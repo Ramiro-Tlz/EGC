@@ -1,0 +1,66 @@
+@import '../base/variables';
+@import '../base/extends';
+
+.iconostarjetas-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    flex-direction: column-reverse;
+    overflow: hidden;
+
+    .iconostarjetas-subcontainer1 {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        width: $width100;
+        margin: 3rem 0;
+
+        @media only screen and (max-width: 768px) {
+            margin: 2rem 0 2rem;
+
+        }
+
+        .iconostarjetas-item1 {
+            flex-basis: $width100;
+
+            .iconos-tarjetas-titulo {
+                font-size: 2rem;
+                text-align: center;
+                margin: 1rem 2rem;
+            }
+        }
+
+        .iconostarjetas-item2 {
+            flex-basis: $width100;
+            display: flex;
+            justify-content: center;
+
+
+            .iconostarjetas-item-img {
+
+
+                .iconos-tarjetas-img1 {
+                    width: $width100 - 20%;
+                }
+            }
+        }
+    }
+
+    .iconostarjetas-subcontainer2 {
+        text-align: center;
+        width: 50%;
+        padding: 2rem 0 5rem 0;
+
+        .diasyhorarios-titulo {
+            font-size: 2rem;
+            padding: 1rem 0;
+
+            .diasyhorarios-info {
+                text-align: center;
+            }
+        }
+    }
+
+}

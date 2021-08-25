@@ -1,0 +1,59 @@
+@import '../base/variables';
+@import '../base/extends';
+
+.formulario {
+    margin: 0 auto;
+    width: 60%;
+
+    .title {
+        margin: 3rem 0;
+        .btn-primary {
+            background-color: nth($colores, 1);
+            border-color: inherit;
+        }
+    }
+}
+
+.mapa {
+    text-align: center;
+    margin: 3rem 0 3rem 0;
+
+    .iframe {
+        @extend %boxshadow;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .formulario {
+        overflow: hidden;
+        margin: 0 auto;
+        width: 60%;
+
+        .btn-primary {
+            background-color: nth($colores, 1);
+            border-color: inherit;
+        }
+    }
+
+    .embed-container {
+        position: relative;
+        padding-bottom: 100%;
+        height: 0;
+        overflow: hidden;
+
+        .mapa {
+            text-align: center;
+            margin: 3rem 0 3rem 0;
+
+            .iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+    }
+}

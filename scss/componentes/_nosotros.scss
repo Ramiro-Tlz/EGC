@@ -1,0 +1,97 @@
+@import '../base/variables';
+@import '../base/extends';
+
+.quienessomos-container {
+    display: flex;
+    width: $width100;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+
+    .quienessomos-item {
+        font-family: $fuenteprincipal;
+        margin: 1rem 3rem;
+        text-align: left;
+        width: $width100;
+
+        .quienessomos-texto {
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 3rem;
+
+            @media only screen and (max-width: 768px) {
+                font-size: 1rem;
+                margin: 1rem;
+                text-align: left;
+
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 1025px) {
+                font-size: 1.5rem;
+                margin: 1rem;
+            }
+        }
+
+    }
+
+    .quienessomos-item2 {
+        background-color: nth($colores, 1);
+        margin: 3rem 0 3rem 0;
+        text-align: center;
+        width: $width100;
+        display: flex;
+        justify-content: center;
+        @extend %boxshadow;
+
+        @media only screen and (max-width: 768px) {
+            position: relative;
+            padding-bottom: 100%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1025px) {
+            position: relative;
+            padding-bottom: 100%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-caja {
+            @media only screen and (max-width: 768px) {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 1025px) {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .quienessomos-img1 {
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+                position: absolute;
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 1025px) {
+                width: 100%;
+                position: absolute;
+            }
+        }
+    }
+    .title {
+        margin: 2rem;
+        text-align: start;
+    }
+}

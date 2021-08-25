@@ -1,0 +1,20 @@
+@import '../base/variables';
+@import '../base/extends';
+
+.menu1 {
+    background-color: nth($colores, 1);
+    position: sticky;
+    top: 0px;
+    z-index: 8;
+    @extend %boxshadow;
+
+    .menu {
+        background-color: nth($colores, 1);
+        font-family: $fuenteprincipal;
+
+    }
+
+    .menu2 {
+        background-color: nth($colores, 1);
+    }
+}

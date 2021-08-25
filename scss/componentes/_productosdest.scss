@@ -1,0 +1,84 @@
+@import '../base/variables';
+@import '../base/extends';
+@import '../base/mixings';
+
+.productosdestacados {
+    @media only screen and (min-width: 768px) and (max-width: 1025px) {}
+
+
+    .productosdestacados-1 {
+        margin: 0;
+        @extend %boxshadow;
+
+        .productosdestacados-titulo {
+            background-color: nth($colores, 1);
+            font-size: 2rem;
+            font-family: $fuenteprincipal;
+            padding: 1.2rem 0;
+            text-align: center;
+
+        }
+    }
+
+    .productosdestacados-2 {
+        margin: 1.9rem 0;
+
+
+        .productosdestacados-container {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 4.3rem 1.9rem;
+            padding: 0;
+
+            @media only screen and (max-width: 768px) {
+                flex-direction: column;
+
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 1025px) {
+                flex-direction: row;
+                flex-wrap: wrap;
+
+            }
+
+            .productosdestacados-item {
+                flex-basis: 15%;
+                text-align: center;
+                transition: all 0.3s;
+                padding: 0.5rem;
+
+                &:hover {
+                    @include transform;
+                }
+
+                .productosdestacados-img-p {
+
+
+                    .productosdestacados-img {
+                        height: 100%;
+                        width: $width100;
+
+                        @media only screen and (max-width: 768px) {
+                            width: 180px;
+                            height: 200px;
+
+                        }
+
+                        @media only screen and (min-width: 768px) and (max-width: 1025px) {
+                            width: 100px;
+                            height: 110px;
+
+                        }
+                    }
+
+                    .productosdestacados-p {
+                        font-size: 1rem;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

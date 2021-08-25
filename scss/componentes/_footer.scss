@@ -1,0 +1,112 @@
+@import '../base/variables';
+@import '../base/extends';
+
+.footer-container {
+    background-color: nth($colores, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $width100;
+    height: 2rem;
+
+    .footer-item1 {
+        display: flex;
+        width: $width100 - 20%;
+
+        .footer-links {
+            margin: 0 2rem;
+        }
+    }
+
+    .footer-item2 {
+        width: $width100 - 80%;
+        text-align: end;
+        flex-direction: row;
+
+        .footer-img {
+            width: 7%;
+            margin: 0.18rem 0.5rem 0 0;
+
+            &:hover {
+                transform: scale(1.1)
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-container {
+        background-color: nth($colores, 1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: $width100;
+        height: 2rem;
+
+        .footer-item1 {
+            display: flex;
+            width: $width100 - 25%;
+
+            .footer-links {
+                font-size: 0.6rem;
+                font-weight: bolder;
+                margin: 0 0.5rem;
+
+            }
+        }
+
+        .footer-item2 {
+            width: $width100 - 75%;
+            text-align: end;
+            flex-direction: row;
+
+            .footer-img {
+                width: 19%;
+                margin: 0.18rem 0.5rem 0 0;
+
+                &:hover {
+                    transform: scale(1.1)
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .footer-container {
+        background-color: nth($colores, 1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: $width100;
+        height: 2.5rem;
+
+        .footer-item1 {
+            display: flex;
+            width: $width100 - 20%;
+
+            .footer-links {
+                font-size: 1.2rem;
+                margin: 0 2rem;
+            }
+        }
+
+        .footer-item2 {
+            width: $width100 - 80%;
+            text-align: end;
+            flex-direction: row;
+
+            .footer-img {
+                width: 15%;
+                margin: 0.18rem 0.5rem 0 0;
+
+                &:hover {
+                    transform: scale(1.1)
+                }
+            }
+        }
+
+    }
+}

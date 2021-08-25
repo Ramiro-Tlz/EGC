@@ -1,0 +1,49 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+/*Index*/
+@import '../scss/componentes/infoimp';
+@import '../scss/componentes/titulo';
+@import '../scss/componentes/menu';
+@import '../scss/componentes/whatsapp';
+@import '../scss/componentes/imgNovedades';
+@import '../scss/componentes/productosdest';
+@import '../scss/componentes/newsletter';
+@import '../scss/componentes/tarjetas';
+@import '../scss/componentes/footer';
+/*Nosotros*/
+@import '../scss/componentes/nosotros';
+/*Contacto*/
+@import '../scss/componentes/contacto';
+/*Marcas*/
+@import '../scss/componentes/marcas';
+/*Servicios*/
+@import '../scss/componentes/servicios';
+/*Preguntas*/
+@import '../scss/componentes/preguntas';
+/*404*/
+@import '../scss/componentes/404';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+:root {
+    --font-size: 16px;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+        &:hover {
+            color: inherit;
+        }
+}

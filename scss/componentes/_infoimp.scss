@@ -1,0 +1,131 @@
+@import '../base/variables';
+@import '../base/extends';
+@import '../base/mixings';
+
+.infoimp-container {
+    background-color: nth($colores, 1);
+    font-family: $fuenteprincipal;
+    color: black;
+
+    .infoimp {
+        width: $width100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @extend %boxshadow;
+
+        .infoimp-texto {
+            width: $width100 - 20%;
+            margin: 0px 0px 0px 1rem;
+
+            .infoimp-texto-p {
+                padding: 0px 0 0.4rem 0;
+                margin: 0.5rem 0 0 0;
+                font-size: 1rem;
+            }
+        }
+
+        .infoimp-links {
+            width: $width100 - 80%;
+            text-align: end;
+
+            .infoimp-link-logo {
+                width: 7%;
+                margin: 0.18rem 0.5rem 0 0;
+
+                &:hover {
+                    @include transform;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .infoimp-container {
+        background-color: nth($colores, 1);
+        font-family: $fuenteprincipal;
+        color: black;
+
+        .infoimp {
+            width: $width100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            .infoimp-texto {
+                width: $width100 - 30%;
+                margin: 0px 0px 0px 1rem;
+
+                .infoimp-texto-p {
+                    padding: 0px 0 0.4rem 0;
+                    margin: 0.5rem 0 0 0;
+                    font-size: 0.5rem;
+                    font-weight: bolder;
+                }
+            }
+
+            .infoimp-links {
+                width: $width100 - 75%;
+                text-align: end;
+
+                .infoimp-link-logo {
+                    width: 20%;
+                    margin: 0.1rem 0.5rem 0 0;
+
+                    &:hover {
+                        @include transform;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+    .infoimp-container {
+        background-color: nth($colores, 1);
+        font-family: $fuenteprincipal;
+        color: black;
+
+        .infoimp {
+            width: $width100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            .infoimp-texto {
+                width: $width100 - 20%;
+                margin: 0px 0px 0px 1rem;
+
+                .infoimp-texto-p {
+                    padding: 0px 0 0.4rem 0;
+                    margin: 0.5rem 0 0 0;
+                    font-size: 1rem;
+                    font-weight: bolder;
+                }
+            }
+
+            .infoimp-links {
+                width: $width100 - 80%;
+                text-align: end;
+
+                .infoimp-link-logo {
+                    width: 15%;
+                    margin: 0.1rem 0.5rem 0 0;
+
+                    &:hover {
+                        @include transform;
+                    }
+                }
+            }
+        }
+
+
+    }
+}

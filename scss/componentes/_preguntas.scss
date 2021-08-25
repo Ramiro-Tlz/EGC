@@ -1,0 +1,17 @@
+@import '../base/variables';
+@import '../base/extends';
+
+.preguntasfrecuentes {
+    text-align: center;
+    margin: 0 auto;
+
+    .preguntasfrecuentes-titulo {
+        text-align: center;
+        padding: 5rem 0 0 0;
+        font-size: 1.5rem;
+    }
+}
+
+.acordion {
+    margin: 5%;
+}

@@ -1,0 +1,149 @@
+@import '../base/variables';
+@import '../base/extends';
+@import '../base/mixings';
+
+.titulo-container {
+    color: nth($colores, 3);
+    width: $width100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    .titulo {
+        padding: 0.5rem;
+        text-align: center;
+        transition: all 1s;
+
+        &:hover {
+            @include transform;
+        }
+
+        .titulo-logo {
+            width: $width100 - 80%;
+        }
+
+        .titulo-h1 {
+            color: nth($colores, 3);
+            font-size: 4rem;
+            width: 100%;
+
+        }
+
+    }
+
+    .titulo2 {
+        padding: 0.5rem 0 2rem 0px;
+        text-align: center;
+
+        .titulo-telefono-icono {
+            width: 3%;
+        }
+
+        .titulo-mapa-icono {
+            width: 3%;
+        }
+
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .titulo-container {
+        color: #000;
+        width: $width100;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        .titulo {
+            padding: 0.5rem;
+            text-align: center;
+            transition: all 1s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            .titulo-logo {
+                width: $width100 - 80%;
+            }
+
+            .titulo-h1 {
+                color: #000;
+                font-size: 2rem;
+                width: 100%;
+            }
+        }
+
+        .titulo2 {
+            padding: 0.5rem 0 2rem 0px;
+            text-align: center;
+
+            .titulo-telefono-icono {
+                width: 3%;
+            }
+
+            .titulo-mapa-icono {
+                width: 3%;
+            }
+
+        }
+
+
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .titulo-container {
+        color: #000;
+        width: $width100;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        .titulo {
+            padding: 0.5rem;
+            text-align: center;
+            transition: all 1s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            .titulo-logo {
+                width: $width100 - 80%;
+            }
+
+            .titulo-h1 {
+                color: #000;
+                font-size: 4rem;
+                width: 100%;
+
+            }
+
+        }
+
+        .titulo2 {
+            padding: 0.5rem 0 2rem 0px;
+            text-align: center;
+
+            .titulo-telefono-icono {
+                width: 3%;
+            }
+
+            .titulo-mapa-icono {
+                width: 3%;
+            }
+
+        }
+
+
+    }
+}
