@@ -7,5 +7,13 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "<h1 align=\"center\">Hi 👋, I'm Ramiro Toloza.</h1>\r <h3 align=\"center\">A passionate frontend developer from Argentina.</h3>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ramiro-Tlz/EGC.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ramiro-Tlz/EGC/issues"
+  },
+  "homepage": "https://github.com/Ramiro-Tlz/EGC#readme"
 }
